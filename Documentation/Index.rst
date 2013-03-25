@@ -43,6 +43,11 @@ You are free
 - to remix: to adapt the work
 - to make commercial use of the work
 
+Sources
+=======
+The sources of this draft are located at
+`Github <https://github.com/marble/typo3-incoming-notes>`_.
+
 
 .. todo: :
 
