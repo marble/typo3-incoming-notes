@@ -11,14 +11,15 @@
 Incoming Notes
 ================================
 
-:Version:         0.0.1
+:Version:         0.0.0
 :Language:        en,de
-:Description:     ...
+:Description:     This is the place very new notes
 :Copyright:       2013 up to now
 :Author:          Martin Bless
 :Email:           martin.bless@typo3.org
 :License:         `Open Content License`_
 :Rendered:        |today|
+:Buildinfo:       `'_make' folder <_make>`_
 
 Sitemap
 =======
