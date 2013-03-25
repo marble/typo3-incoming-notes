@@ -1,5 +1,5 @@
 ﻿.. ==================================================
-.. FOR YOUR INFORMATION 
+.. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.  ÄÖÜäöüß
 
@@ -30,14 +30,14 @@ Create a ".git.make" folder
 
 Edit files in copied ".git.make" folder
 =======================================
-    
+
 In conf.py::
 
   # do a global string replace
   # old string: '../REST-SOURCE-FOLDER.git/Documentation'
   # new string: '../typo3-incoming-notes.git/Documentation'
 
-  
+
 In Makefile::
 
   # do a global string replace
@@ -47,7 +47,7 @@ In Makefile::
   # do a global string replace for /home/mbless/public_html/PRODUCT/drafts/github/GITHUB_USER/MANUAL_NAME
   # old string:  /PRODUCT/drafts/github/GITHUB_USER/MANUAL_NAME
   # new string:  /typo3cms/drafts/github/marble/IncomingNotes
-  
+
 
 
 In cron_rebuild.sh::
@@ -160,6 +160,4 @@ Example of Github hook data "payload"
       "forced": false,
       "deleted": false
   }
-  
-
 
