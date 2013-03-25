@@ -18,7 +18,6 @@ Incoming Notes
 :Email:           martin.bless@typo3.org
 :Language:        en,de
 :License:         `CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>`_
-:Related drafts:  `Documentation Contribution Guide <http://docs.typo3.org/typo3cms/drafts/github/marble/DocumentationContributionGuide/>`_
 :Rendered:        |today|
 :Version:         0.0.0
 
@@ -26,6 +25,14 @@ Sitemap
 =======
 
 :ref:`Sitemap <sitemap>`
+
+Some drafts
+===========
+
+`Documentation Contribution Guide <http://docs.typo3.org/typo3cms/drafts/github/marble/DocumentationContributionGuide/>`_,
+`Incoming Notes <http://docs.typo3.org/typo3cms/drafts/github/marble/IncomingNotes/>`_,
+`Manage Github Repositories <http://docs.typo3.org/typo3cms/drafts/github/marble/ManageGithubRepositories/>`_,
+
 
 Info
 ====
