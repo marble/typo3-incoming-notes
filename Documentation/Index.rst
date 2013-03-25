@@ -17,9 +17,9 @@ Incoming Notes
 :Copyright:       2013 up to now
 :Author:          Martin Bless
 :Email:           martin.bless@typo3.org
-:License:         `Open Content License`_
+:License:         `CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>`_
+:Buildinfo:       `Make folder <_make>`_
 :Rendered:        |today|
-:Buildinfo:       `'_make' folder <_make>`_
 
 Sitemap
 =======
@@ -31,6 +31,17 @@ Info
 
 The content of this document is related to TYPO3, a GNU/GPL 
 CMS/Framework available from `typo3.org`_.
+
+License
+=======
+
+`CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>`_ 
+Creative Commons Attribution-ShareAlike 3.0 Unported.
+You are free
+- to share: to copy, distribute and transmit the work
+- to remix: to adapt the work
+- to make commercial use of the work
+
 
 .. todo: :
 
@@ -49,7 +60,6 @@ CMS/Framework available from `typo3.org`_.
    Notes-001/*
    ExtensionRestdoc/Index
    RevisionControlSystems/Index
-   Server/Index
    TypoScript/Index
    FinalPages/*
 
