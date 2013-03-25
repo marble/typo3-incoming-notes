@@ -11,15 +11,16 @@
 Incoming Notes
 ================================
 
-:Version:         0.0.0
-:Language:        en,de
-:Description:     This is the place very new notes
-:Copyright:       2013 up to now
 :Author:          Martin Bless
-:Email:           martin.bless@typo3.org
-:License:         `CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>`_
 :Buildinfo:       `Make folder <_make>`_
+:Copyright:       2013 up to now
+:Description:     This is the place very new notes
+:Email:           martin.bless@typo3.org
+:Language:        en,de
+:License:         `CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>`_
+:Related drafts:  `Documentation Contribution Guide <http://docs.typo3.org/typo3cms/drafts/github/marble/DocumentationContributionGuide/>`_
 :Rendered:        |today|
+:Version:         0.0.0
 
 Sitemap
 =======
