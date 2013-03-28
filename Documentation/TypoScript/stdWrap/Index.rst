@@ -7,14 +7,16 @@
 
 
 =================================
-stdWrap
+stdWrap 
 =================================
 
 
-Two figures courtesy of Xavier Perseguers
-=========================================
+stdWrap visual overview
+=======================
 
-Read about stdWrap in the TyposcriptReference: :ref:`t3tsref:stdWrap`
+Two figures courtesy of Xavier Perseguers.
+Read about stdWrap in the TyposcriptReference: :ref:`t3tsref:stdWrap`.
+These figures have been contributed with issue :forge:`39684` .
 
 .. image:: stdwrap.png
 
