@@ -12,5 +12,6 @@ docs.typo3.org
    :titlesonly:
 
    Inventory/*
+   Actions/*
 
 :ref:`Sitemap <sitemap>`

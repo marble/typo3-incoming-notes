@@ -70,8 +70,8 @@ The sources of this draft are located at
    :glob:
    :titlesonly:
    
-   *
    DocsTypo3Org/*
+   *
    Notes-001/*
    ExtensionRestdoc/Index
    RevisionControlSystems/Index
