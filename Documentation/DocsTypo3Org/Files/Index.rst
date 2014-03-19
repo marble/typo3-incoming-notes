@@ -5,6 +5,10 @@
 Files and Folders
 ==================================================
 
+.. contents::
+   :local:
+
+
 :ref:`Sitemap <sitemap>`
 
 
