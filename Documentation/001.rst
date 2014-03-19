@@ -1,0 +1,14 @@
+.. include:: Includes.txt
+
+.. goto: http://docs.typo3.org/typo3cms/drafts/github/marble/IncomingNotes/Index.html
+
+.. _001:
+
+==================================================
+001
+==================================================
+
+
+.htaccess files that turn directory listing on:
+- /home/mbless/HTDOCS
+- /home/mbless/public_html/typo3cms/drafts/.htaccess

@@ -70,6 +70,7 @@ The sources of this draft are located at
    :glob:
    :titlesonly:
    
+   *
    Notes-001/*
    ExtensionRestdoc/Index
    RevisionControlSystems/Index
