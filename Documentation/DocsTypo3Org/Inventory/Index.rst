@@ -59,5 +59,4 @@ The destination directory::
 
   /home/mbless/public_html/
 
-
 :ref:`Sitemap <sitemap>`
