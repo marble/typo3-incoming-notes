@@ -31,9 +31,14 @@ Runs::
 
   /home/mbless/HTDOCS/git.typo3.org/Documentation/cron_rebuild.sh
 
-A lockfile will be created and remove at the end of the job. A lockfile that is older than
-twelve hours will always be ignored and removed. In the course of this script several calls will
-be made.
+This is mainly a dispatcher that makes sure that in the end each individual
+``cron_rebuild.sh`` file of each documentation project is call. Only one such process at a time
+should be running on the server. To achieve that a lockfile will be created in the beginning of the
+job and it will be removed at the end of the job. In case something goes wrong it could happen
+that such a lockfile continues to exist after the end of the job. To provide a "self healing"
+mechanism her any lockfile that is older than twelve hours will be ignored and removed automatically.
+
+The script will directly call several other scripts.
 
 Several build files of individual documentation projects will be called directly from here.
 For example::
@@ -60,7 +65,6 @@ documentation projects that are hosted on Github. See XXX how this works::
 
   /home/mbless/HTDOCS/github.com/marble/typo3-manage-github-repositories.git/cronjob-process-incoming.sh
 
-
 Another is made to the following. It is the place where newer documentation project are added::
 
   # 2nd file ...
@@ -70,12 +74,10 @@ And these scripts are called as well one after the other::
 
   # Extensions ...
   /home/mbless/HTDOCS/git.typo3.org/TYPO3v4/cron_rebuild.sh
-
   # Forge ...
   /home/mbless/HTDOCS/svn.typo3.org/TYPO3v4/cron_rebuild.sh
-
   # sysext/* extensions
   /home/mbless/HTDOCS/git.typo3.org/TYPO3v4/Extensions/TYPO3.CMS.ALL-SYSEXT.master.make/cron_rebuild.sh
 
-
 :ref:`Sitemap <sitemap>`
+

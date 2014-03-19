@@ -2,7 +2,7 @@
 .. include:: ../../Includes.txt
 
 ==================================================
-Inventory of docs.typo3.org
+Files and Folders
 ==================================================
 
 :ref:`Sitemap <sitemap>`
@@ -58,5 +58,50 @@ The make script::
 The destination directory::
 
   /home/mbless/public_html/
+
+
+The "Make" directory of a documentation project
+===============================================
+
+Each documentation project is cloned to its own folder. If the project has different
+branches the branch is checked out *in that folder* when needed. Example::
+
+  /home/mbless/HTDOCS/git.typo3.org/Documentation/TYPO3/Reference/Typoscript.git/
+
+See the `folder <http://docs.typo3.org/~mbless/git.typo3.org/Documentation/TYPO3/Reference/Typoscript.git/>`__.
+
+Currently each branch has its own "build folder". Examples:
+`TypoScript (master)<http://docs.typo3.org/~mbless/git.typo3.org/Documentation/TYPO3/Reference/Typoscript.git.make/>`__,
+`TypoScript 6.1<http://docs.typo3.org/~mbless/git.typo3.org/Documentation/TYPO3/Reference/Typoscript.git.make/>`__,
+`TypoScript 6.1<http://docs.typo3.org/~mbless/git.typo3.org/Documentation/TYPO3/Reference/Typoscript.git.make_6.1/>`__,
+`TypoScript 6.0<http://docs.typo3.org/~mbless/git.typo3.org/Documentation/TYPO3/Reference/Typoscript.git.make_6.0/>`__,
+`TypoScript 4.7<http://docs.typo3.org/~mbless/git.typo3.org/Documentation/TYPO3/Reference/Typoscript.git.make_4.7/>`__.
+
+The build folder contains a mixture of configuration files and log files.
+
+
+Configuration files
+-------------------
+
+- cron_rebuild.conf
+- cron_rebuild.sh
+- conf.py
+- Makefile
+
+Trigger file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 :ref:`Sitemap <sitemap>`

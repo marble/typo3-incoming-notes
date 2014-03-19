@@ -1,7 +1,7 @@
 .. include:: ../Includes.txt
 
 ==================================================
-docs.typo3.org
+Inventory of Docs.TYPO3.org
 ==================================================
 
 :ref:`Sitemap <sitemap>`
@@ -11,7 +11,8 @@ docs.typo3.org
    :glob:
    :titlesonly:
 
-   Inventory/*
+   Files/*
    Actions/*
+   Tools/*
 
 :ref:`Sitemap <sitemap>`
