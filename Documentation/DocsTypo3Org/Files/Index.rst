@@ -87,11 +87,55 @@ Configuration files
 - cron_rebuild.sh
 - conf.py
 - Makefile
+- build.checksum
+
 
 Trigger file
+------------
+
+- request_rebuild.php
+
+
+Log files
+---------
+
+10_conf_py.yml
+~~~~~~~~~~~~~~
+Represents the initial state of the Sphinx configuration data and contains
+built in values plus merged values from 'conf.py'.
+
+20_GlobalSettings.yml
+~~~~~~~~~~~~~~~~~~~~~
+Represents global settings that have been found during the last build.
+
+30_Settings.yml
+~~~~~~~~~~~~~~~
+Represents the local settings of this documentation project that have
+been found during the last build.
+
+10+20_conf.py.yml
+~~~~~~~~~~~~~~~~~
+This show an intermediate result after applying th global settings.
+
+10+20+30_conf.py.yml
+~~~~~~~~~~~~~~~~~~~~
+This represents the final settings that had been used during the last build.
+
+dirs-of-last-build.txt
+~~~~~~~~~~~~~~~~~~~~~~
+A file that summarizes which directories had bee involved during
+the last build.
+
+included-files-check.log.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This is written by XXX ...
 
 
 
+Stash file
+----------
+
+The current :file:`objects.inv` is copied here before doing a "make clean" XXX ...
 
 
 
