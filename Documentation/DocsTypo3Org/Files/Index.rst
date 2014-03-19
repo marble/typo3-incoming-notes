@@ -45,6 +45,7 @@ the source site is replicated. See http://docs.typo3.org/~mbless/git.typo3.org/.
 ----------------------------------
 Data checked out from http://svn.typo3.org/ resides here. The folder structure of
 the source site should be replicated. See http://docs.typo3.org/~mbless/svn.typo3.org/.
+It looks like we don't use and don't need this tree any more.
 
 
 /home/mbless/HTDOCS/github.com/
@@ -58,14 +59,23 @@ the source site is replicated. See http://docs.typo3.org/~mbless/github.com/.
 This is the webroot folder of http://docs.typo3.org/.
 
 
-The "Glue Pages
----------------
-These are the content pages::
+The "Glue Pages"
+----------------
+The "glue pages" contain the editorial content on docs.typo3.org.
+They are made up from just a normal Sphinx documentation project itself
+with carefully chosen filenames so that the fit in the "empty spots"
+between the normal manuals.
+
+.. attention:: Unfortunately the glue pages are not in a Git repository.
+   This should be changed!
+
+This is the `glue pages content <http://docs.typo3.org/~mbless/git.typo3.org/Documentation/DocsTypo3Org.git/Documentation/>`__::
 
   # glue pages content
   /home/mbless/HTDOCS/git.typo3.org/Documentation/DocsTypo3Org.git
 
-The make script::
+The `make folder <http://docs.typo3.org/~mbless/git.typo3.org/Documentation/DocsTypo3Org.git.make/>`__
+with the file :file:`request_rebuild.php` to request a rebuild::
 
   # glue pages make
   /home/mbless/HTDOCS/git.typo3.org/Documentation/DocsTypo3Org.git.make/cron_rebuild.sh
