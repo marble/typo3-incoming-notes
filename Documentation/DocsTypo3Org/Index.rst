@@ -4,7 +4,20 @@
 Inventory of Docs.TYPO3.org
 ==================================================
 
-:ref:`Sitemap <sitemap>`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .. toctree::
    :maxdepth: 5

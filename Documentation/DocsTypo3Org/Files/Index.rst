@@ -14,28 +14,37 @@ What is where?
 /home/mbless/
 -------------
 
-This is where everything starts. Forget about the user name - it should be read as "docstypo3org".
+This is where everything starts. Forget about the user name - it should be
+thought of as the "docs.typo3.org"-user.
 
 
 /home/mbless/HTDOCS/
 --------------------
+Directory listing is turned on. This is the webroot folder of
 
-Directory listing is turned on. Currently it is just a huge public collection of data and stuff.
-It is available as http://docs.typo3.org/~mbless/ or http://srv123.typo3.org/~mbless/.
+- http://docs.typo3.org/~mbless/ alias
+- http://srv123.typo3.org/~mbless/
+
+It is a big public collection of data and stuff like a repository. It is not
+versioned as a whole.
 
 
 /home/mbless/HTDOCS/git.typo3.org/
 ----------------------------------
+Data cloned from http://git.typo3.org/ resides here. The folder structure of
+the source site is replicated. See http://docs.typo3.org/~mbless/git.typo3.org/.
 
-Data cloned from http://git.typo3.org/ resides here. It should replicate the folder structure of
-the source repositories. See http://docs.typo3.org/~mbless/git.typo3.org/.
+
+/home/mbless/HTDOCS/svn.typo3.org/
+----------------------------------
+Data checked out from http://svn.typo3.org/ resides here. The folder structure of
+the source site should be replicated. See http://docs.typo3.org/~mbless/svn.typo3.org/.
 
 
 /home/mbless/HTDOCS/github.com/
 -------------------------------
-
-Data cloned from http://github.com/ resides here. It should replicate the folder structure of
-the source repositories. See http://docs.typo3.org/~mbless/github.com/.
+Data cloned from http://github.com/ resides here. The folder structure of
+the source site is replicated. See http://docs.typo3.org/~mbless/github.com/.
 
 
 /home/mbless/public_html/
