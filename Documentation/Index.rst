@@ -14,12 +14,12 @@ Incoming Notes
 :Author:          Martin Bless
 :Buildinfo:       `Make folder <_make>`_
 :Copyright:       2013 up to now
-:Description:     This is the place very new notes
+:Description:     This is the place for very new notes
 :Email:           martin.bless@typo3.org
 :Language:        en,de
 :License:         `CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>`_
 :Rendered:        |today|
-:Version:         0.0.0
+:Version:         0.0.1
 
 Sitemap
 =======
