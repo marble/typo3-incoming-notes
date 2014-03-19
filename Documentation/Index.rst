@@ -71,6 +71,7 @@ The sources of this draft are located at
    :titlesonly:
    
    *
+   DocsTypo3Org/*
    Notes-001/*
    ExtensionRestdoc/Index
    RevisionControlSystems/Index
