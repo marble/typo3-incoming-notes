@@ -90,15 +90,22 @@ A howto for developers:
 
   2. Clone the `current developers version of t3sphinx`__ from Github
 
-  3. Replace the folder ``... t3sphinx/``.
+  3. Replace the folder ``t3sphinx/`` by that from Github
+
+  4. Make you are using the new `code-block-for-typo3`__ from Github
+
+  5. To run the TYPO3 specific builds make::
+
+       make t3html
+       make t3dirhtml
+       make t3singlehtml
+       make 3pickle
+       make t3json
+
+       .. note:: ``make t3json`` now works out of the box.
 
 __ https://github.com/marble/typo3-resttools-t3sphinx
-
-.. attention::
-
-   Make sure to use the new `code-block-for-typo3`__
-
-   __ https://github.com/marble/typo3-resttools-t3sphinx/blob/master/resources/typo3_codeblock_for_conf.py
+__ https://github.com/marble/typo3-resttools-t3sphinx/blob/master/resources/typo3_codeblock_for_conf.py
 
 The *codeblock for TYPO3* has now changed changed for the first time and carries
 ``version: 2014-03-23`` as an identifier. New are the settings *html_translator_class*
