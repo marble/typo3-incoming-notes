@@ -18,6 +18,8 @@ t3sphinx
 *t3sphinx* is a Python package that adds TYPO3 specific functionality to the Sphinx documentation tools.
 
 
+.. t3sphinx-installation:
+
 Installation
 ------------
 
@@ -53,6 +55,8 @@ or use the interactive mode of Python::
   $
 
 
+.. t3sphinx-invocation:
+
 Invocation
 ----------
 
@@ -82,14 +86,21 @@ __ https://git.typo3.org/Documentation/RestTools.git/blob/HEAD:/ExtendingSphinxF
 		# relative path from conf.py to master_doc
 		t3DocTeam['relpath_to_master_doc'] = '..'
 
+
 Developmental version of *t3sphinx*
 -----------------------------------
 
 A howto for developers:
 
-1. `Find out <Installation>`_ where your current *t3sphinx* resides
-2. Clone the `current developers version of t3sphinx`__ from Github
-3. Replace the folder ``t3sphinx/`` by that from Github
+1. :ref:`Find out <t3sphinx-installation>`_ where your current *t3sphinx* resides
+
+2. Clone the `current developers version of t3sphinx`__ from Github into a folder
+   ``t3sphin/``::
+
+     $ git clone https://github.com/marble/typo3-resttools-t3sphinx t3sphinx
+
+
+3. Replace your old folder ``t3sphinx/`` by the new one from Github
 4. Make sure you are using the new `code-block-for-typo3`__ from Github
 5. To run the TYPO3 specific builds make::
 
@@ -99,15 +110,15 @@ A howto for developers:
       make 3pickle
       make t3json
 
-   .. note:: ``make t3json`` now works out of the box. The inheritance
+   .. note:: Making Json output now works out of the box. The inheritance
              mismatch of the classes is gone.
 
 __ https://github.com/marble/typo3-resttools-t3sphinx
 __ https://github.com/marble/typo3-resttools-t3sphinx/blob/master/resources/typo3_codeblock_for_conf.py
 
 The *codeblock for TYPO3* has now changed changed for the first time and carries
-``version: 2014-03-23`` as an identifier. New are the settings ``html_translator_class``
-and ``locale_dirs``.
+``version: 2014-03-23`` as an identifier. Settings ``html_translator_class``
+and ``locale_dirs`` are new.
 
 
 :ref:`Sitemap <sitemap>`
