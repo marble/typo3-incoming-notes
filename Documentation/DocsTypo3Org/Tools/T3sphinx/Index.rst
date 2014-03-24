@@ -34,7 +34,7 @@ Clone the repository and run the installer::
   $ cd ~/RestTools/ExtendingSphinxForTYPO3
   $ python setup.py install
 
-To find out where that package has been placed on you machine run::
+To find out where that package has been placed on your machine run::
 
   $ python -c "import t3sphinx; print t3sphinx.__file__"
   /usr/local/lib/python2.6/dist-packages/t3sphinx/__init__.pyc
@@ -58,25 +58,26 @@ Invocation
 
 The TYPO3 specific functionality that *t3sphinx* provides will only be
 activated when the usual Sphinx configuration file :file:`conf.py` is being
-used **and** when *conf.py* contains the *TYPO3 specific code block*
+used **and** when :file:`conf.py` contains the `TYPO3 specific code block`__
 near the end.
+
+__ https://git.typo3.org/Documentation/RestTools.git/blob/HEAD:/ExtendingSphinxForTYPO3/src/t3sphinx/resources/typo3_codeblock_for_conf.py
 
 Copy that codeblock from `t3sphinx.resources.typo3_codeblock_for_conf.py`__
 and paste it at the end of the :file:`conf.py` configuration file.
 
-__ https://git.typo3.org/Documentation/RestTools.git/tree/HEAD:/ExtendingSphinxForTYPO3/src/t3sphinx/resources
+__ https://git.typo3.org/Documentation/RestTools.git/blob/HEAD:/ExtendingSphinxForTYPO3/src/t3sphinx/resources/typo3_codeblock_for_conf.py
 
 .. important::
 
    Make sure that the relative path from *conf.py* to *master_doc* is set correctly.
    In TYPO3 projects we usually use this structure::
 
-       ./project/Documentation/Index.rst      (= master_doc)
+       ./project/Documentation/Index.rst       <= master_doc
        ./project/Documentation/_make/conf.py
 
-   This is the reason why we have ``..`` as relative path in the TYPO3 specific
-   code block. Adapt the following line if your :file:`conf.py`is placed somewhere
-   else::
+   This is the reason why we have ``'..'`` as relative path in the TYPO3 specific
+   code block. Adapt the following line if your :file:`conf.py` is placed elsewhere::
 
 		# relative path from conf.py to master_doc
 		t3DocTeam['relpath_to_master_doc'] = '..'
@@ -86,30 +87,27 @@ Developmental version of *t3sphinx*
 
 A howto for developers:
 
-  1. `Find out <Installation>`_ where your current *t3sphinx* resides
+1. `Find out <Installation>`_ where your current *t3sphinx* resides
+2. Clone the `current developers version of t3sphinx`__ from Github
+3. Replace the folder ``t3sphinx/`` by that from Github
+4. Make sure you are using the new `code-block-for-typo3`__ from Github
+5. To run the TYPO3 specific builds make::
 
-  2. Clone the `current developers version of t3sphinx`__ from Github
+      make t3html
+      make t3dirhtml
+      make t3singlehtml
+      make 3pickle
+      make t3json
 
-  3. Replace the folder ``t3sphinx/`` by that from Github
-
-  4. Make you are using the new `code-block-for-typo3`__ from Github
-
-  5. To run the TYPO3 specific builds make::
-
-       make t3html
-       make t3dirhtml
-       make t3singlehtml
-       make 3pickle
-       make t3json
-
-       .. note:: ``make t3json`` now works out of the box.
+   .. note:: ``make t3json`` now works out of the box. The inheritance
+             mismatch of the classes is gone.
 
 __ https://github.com/marble/typo3-resttools-t3sphinx
 __ https://github.com/marble/typo3-resttools-t3sphinx/blob/master/resources/typo3_codeblock_for_conf.py
 
 The *codeblock for TYPO3* has now changed changed for the first time and carries
-``version: 2014-03-23`` as an identifier. New are the settings *html_translator_class*
-and *locale_dirs*.
+``version: 2014-03-23`` as an identifier. New are the settings ``html_translator_class``
+and ``locale_dirs``.
 
 
 :ref:`Sitemap <sitemap>`
