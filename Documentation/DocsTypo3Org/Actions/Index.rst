@@ -5,8 +5,8 @@
 Actions
 ==================================================
 
-:ref:`Sitemap <sitemap>`
 
+.. highlight:: bash
 
 CRON
 ====
