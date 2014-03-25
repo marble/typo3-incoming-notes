@@ -59,9 +59,12 @@ Early Python distributions don't come with Yaml modules. Install them: ``easy_in
 pygments
 --------
 
-A Python packet that provides syntax highlighting. If missing use the Debian package ``python-pygments``
+Pygments_is a Python packet that provides syntax highlighting. It is used by Sphinx_.
+If missing use the Debian package ``python-pygments``
 or run ``easy_install pygments``.
 
+.. _Pygments: http://pygments.org/
+.. _Sphinx: http://sphinx-doc.org/
 
 TypoScript Highlighting for Pygments
 ------------------------------------
