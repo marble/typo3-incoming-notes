@@ -90,5 +90,42 @@ done at all. And they use ther own lockfile :file:`cron_rebuild.lockfile`::
 ..
 
 
+
+
+
+
+
+Various scripts
+===============
+
+- `/home/mbless/scripts/`__
+
+  __ https://github.com/marble/typo3-docs-typo3-org-resources/tree/master/userroot/scripts
+
+
+- `/home/mbless/HTDOCS/github.com/xperseguers/TYPO3.docs.ter-automation/`__ and at Github__.
+
+  __ http://docs.typo3.org/~mbless/github.com/xperseguers/TYPO3.docs.ter-automation/
+  __ https://github.com/xperseguers/TYPO3.docs.ter-automation
+
+
+- [git-TERautomation]/RENDER-DOC/force-render.sh: helper script to manually enqueue a
+  given extension+version's manual
+
+- [git-TERautomation]::
+
+    bin/t3xutils.phar
+      queue/   ::   unpacked extensions (full) waiting to be rendered,
+                    populated by TerTask.php, emptied by RenderTask.php
+      render/  ::   working directory, processed by RenderTask.php,
+                    see "directory for build" below
+
+..
+
+
+
+
+
+
 :ref:`Sitemap <sitemap>`
 
