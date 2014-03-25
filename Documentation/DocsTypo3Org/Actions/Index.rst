@@ -114,15 +114,17 @@ Various scripts
 
 - [git-TERautomation]::
 
-    bin/t3xutils.phar
+    /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/
+    /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/bin/t3xutils.phar
+    /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/queue/
+    /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/render/
+
       queue/   ::   unpacked extensions (full) waiting to be rendered,
                     populated by TerTask.php, emptied by RenderTask.php
       render/  ::   working directory, processed by RenderTask.php,
                     see "directory for build" below
 
 ..
-
-
 
 
 
