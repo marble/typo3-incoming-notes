@@ -112,20 +112,30 @@ Various scripts
 - [git-TERautomation]/RENDER-DOC/force-render.sh: helper script to manually enqueue a
   given extension+version's manual
 
-- [git-TERautomation]::
+- [`git-TERautomation`__]:
 
-    /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/
-    /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/bin/t3xutils.phar
-    /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/queue/
-    /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/render/
+  __ http://docs.typo3.org/~mbless/github.com/xperseguers/TYPO3.docs.ter-automation/
 
-      queue/   ::   unpacked extensions (full) waiting to be rendered,
-                    populated by TerTask.php, emptied by RenderTask.php
-      render/  ::   working directory, processed by RenderTask.php,
-                    see "directory for build" below
+  ::
 
-..
+    /home/mbless/HTDOCS/github.com/xperseguers/
+      RENDER-DOC/
+        bin/
+          t3xutils.phar
 
+        queue/   ::  unpacked extensions (full) waiting to be rendered,
+                     populated by TerTask.php, emptied by RenderTask.php
+
+        render/  ::  working directory, processed by RenderTask.php,
+                     see "directory for build" below
+
+  * `RENDER-DOC/`__
+  * `RENDER-DOC/queue/`__
+  * `RENDER-DOC/render/`__
+
+  __ /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/
+  __ /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/queue/
+  __ /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/render/
 
 
 
