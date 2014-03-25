@@ -7,6 +7,9 @@ Packages
 
 Rendered: |today|
 
+.. contents::
+   :local:
+
 :ref:`Sitemap <sitemap>`
 
 

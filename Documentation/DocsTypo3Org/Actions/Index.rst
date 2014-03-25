@@ -5,6 +5,14 @@
 Actions
 ==================================================
 
+Rendered: |today|
+
+.. contents::
+   :local:
+
+:ref:`Sitemap <sitemap>`
+
+
 
 .. highlight:: bash
 
@@ -99,44 +107,36 @@ Various scripts
 ===============
 
 - `/home/mbless/scripts/`__
-
   __ https://github.com/marble/typo3-docs-typo3-org-resources/tree/master/userroot/scripts
 
-
 - `/home/mbless/HTDOCS/github.com/xperseguers/TYPO3.docs.ter-automation/`__ and at Github__.
-
   __ http://docs.typo3.org/~mbless/github.com/xperseguers/TYPO3.docs.ter-automation/
   __ https://github.com/xperseguers/TYPO3.docs.ter-automation
 
-
-- [git-TERautomation]/RENDER-DOC/force-render.sh: helper script to manually enqueue a
-  given extension+version's manual
-
-- [`git-TERautomation`__]:
-
-  __ http://docs.typo3.org/~mbless/github.com/xperseguers/TYPO3.docs.ter-automation/
-
-  ::
+- [`git-TERautomation`__]::
 
     /home/mbless/HTDOCS/github.com/xperseguers/
-      RENDER-DOC/
-        bin/
-          t3xutils.phar
+       RENDER-DOC/
+          force-render.sh   ::   helper script to manually enqueue a
+                                 given extension+version's manual
+          bin/
+             t3xutils.phar
 
-        queue/   ::  unpacked extensions (full) waiting to be rendered,
-                     populated by TerTask.php, emptied by RenderTask.php
+          queue/   ::  unpacked extensions (full) waiting to be rendered,
+                       populated by TerTask.php, emptied by RenderTask.php
 
-        render/  ::  working directory, processed by RenderTask.php,
-                     see "directory for build" below
+          render/  ::  working directory, processed by RenderTask.php,
+                       see "directory for build" below
+
+  __ http://docs.typo3.org/~mbless/github.com/xperseguers/TYPO3.docs.ter-automation/
 
   * `RENDER-DOC/`__
   * `RENDER-DOC/queue/`__
   * `RENDER-DOC/render/`__
 
-  __ /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/
-  __ /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/queue/
-  __ /home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/render/
-
+  __ http://docs.typo3.org/~mbless/github.com/xperseguers/RENDER-DOC/
+  __ http://docs.typo3.org/~mbless/github.com/xperseguers/RENDER-DOC/queue/
+  __ http://docs.typo3.org/~mbless/github.com/xperseguers/RENDER-DOC/render/
 
 
 :ref:`Sitemap <sitemap>`

@@ -5,9 +5,10 @@
 Python Package 't3sphinx'
 ==================================================
 
+Rendered: |today|
+
 .. contents::
    :local:
-
 
 :ref:`Sitemap <sitemap>`
 

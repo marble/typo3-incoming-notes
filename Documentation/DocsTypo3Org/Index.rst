@@ -4,8 +4,8 @@
 Inventory of Docs.TYPO3.org
 ==================================================
 
-
 Rendered: |today|
+
 
 .. toctree::
    :maxdepth: 5

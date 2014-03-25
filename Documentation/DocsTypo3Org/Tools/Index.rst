@@ -7,7 +7,11 @@ Tools
 
 Rendered: |today|
 
+.. contents::
+   :local:
+
 :ref:`Sitemap <sitemap>`
+
 
 The build script 'cron_build.sh'
 ================================

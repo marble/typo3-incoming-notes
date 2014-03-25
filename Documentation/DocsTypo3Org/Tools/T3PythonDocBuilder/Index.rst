@@ -5,8 +5,13 @@
 T3PythonDocBuilder
 ==================================================
 
+Rendered: |today|
+
 .. contents::
    :local:
+
+:ref:`Sitemap <sitemap>`
+
 
 
 What does it do?

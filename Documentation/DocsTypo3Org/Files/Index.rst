@@ -5,12 +5,12 @@
 Files and Folders
 ==================================================
 
+Rendered: |today|
+
 .. contents::
    :local:
 
-
 :ref:`Sitemap <sitemap>`
-
 
 
 What is where?

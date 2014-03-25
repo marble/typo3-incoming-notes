@@ -7,6 +7,9 @@ Repositories
 
 Rendered: |today|
 
+.. contents::
+   :local:
+
 :ref:`Sitemap <sitemap>`
 
 
