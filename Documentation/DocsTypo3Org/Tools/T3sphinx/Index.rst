@@ -87,6 +87,15 @@ __ https://git.typo3.org/Documentation/RestTools.git/blob/HEAD:/ExtendingSphinxF
 		t3DocTeam['relpath_to_master_doc'] = '..'
 
 
+
+Yaml Settings
+-------------
+
+(( now possible: key:value (replace), key_!REMOVE! : value (remove), key_!UPDATE! : (add or replace), use: language:en
+to get translation, FinalSettings.yml, not recursive yet))
+
+
+
 Developmental version of *t3sphinx*
 -----------------------------------
 

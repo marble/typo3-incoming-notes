@@ -13,6 +13,7 @@ Rendered: |today|
    :titlesonly:
 
    Files/*
+   Repositories/*
    Actions/*
    Tools/*
 
