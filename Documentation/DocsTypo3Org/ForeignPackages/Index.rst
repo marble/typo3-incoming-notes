@@ -16,9 +16,11 @@ Debian
 
 - python python-docutils python-sphinx python-pygments
 
-- openoffice.org-core  # we want: Openoffice headless
+- openoffice.org openoffice.org-core  # we want: Openoffice headless
 
 - beanstalkd
+
+- tidy
 
 - fdupes # used by cron_rebuild.sh to hard-link identical files in /home/mbless/public_html/
 

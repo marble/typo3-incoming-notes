@@ -29,6 +29,7 @@ The Github Hook Receiver
 
    *
    T3sphinx/*
+   T3PythonDocBuilder/*
 
 
 :ref:`Sitemap <sitemap>`
