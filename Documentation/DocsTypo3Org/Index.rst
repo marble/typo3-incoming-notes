@@ -13,8 +13,10 @@ Rendered: |today|
    :titlesonly:
 
    Files/*
-   Repositories/*
    Actions/*
    Tools/*
+   Repositories/*
+   ForeignPackages/*
+
 
 :ref:`Sitemap <sitemap>`
