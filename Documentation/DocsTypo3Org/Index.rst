@@ -15,6 +15,7 @@ Rendered: |today|
    Files/*
    Actions/*
    Tools/*
+   Services/*
    Repositories/*
    ForeignPackages/*
 

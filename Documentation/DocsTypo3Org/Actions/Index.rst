@@ -13,8 +13,43 @@ Rendered: |today|
 :ref:`Sitemap <sitemap>`
 
 
-
 .. highlight:: bash
+
+
+Various scripts
+===============
+
+- `/home/mbless/scripts/`__
+
+- `/home/mbless/HTDOCS/github.com/xperseguers/TYPO3.docs.ter-automation/`__ and at Github__.
+
+- [git-TERautomation]::
+
+    /home/mbless/HTDOCS/github.com/xperseguers/
+       RENDER-DOC/
+          force-render.sh   ::   helper script to manually enqueue a
+                                 given extension+version's manual
+          bin/
+             t3xutils.phar
+
+          queue/   ::  unpacked extensions (full) waiting to be rendered,
+                       populated by TerTask.php, emptied by RenderTask.php
+
+          render/  ::  working directory, processed by RenderTask.php,
+                       see "directory for build" below
+
+  * `RENDER-DOC/`__
+  * `RENDER-DOC/queue/`__
+  * `RENDER-DOC/render/`__
+
+__ https://github.com/marble/typo3-docs-typo3-org-resources/tree/master/userroot/scripts
+__ http://docs.typo3.org/~mbless/github.com/xperseguers/TYPO3.docs.ter-automation/
+__ https://github.com/xperseguers/TYPO3.docs.ter-automation
+__ http://docs.typo3.org/~mbless/github.com/xperseguers/RENDER-DOC/
+__ http://docs.typo3.org/~mbless/github.com/xperseguers/RENDER-DOC/queue/
+__ http://docs.typo3.org/~mbless/github.com/xperseguers/RENDER-DOC/render/
+
+
 
 CRON
 ====
@@ -101,42 +136,6 @@ done at all. And they use ther own lockfile :file:`cron_rebuild.lockfile`::
 
 
 
-
-
-Various scripts
-===============
-
-- `/home/mbless/scripts/`__
-  __ https://github.com/marble/typo3-docs-typo3-org-resources/tree/master/userroot/scripts
-
-- `/home/mbless/HTDOCS/github.com/xperseguers/TYPO3.docs.ter-automation/`__ and at Github__.
-  __ http://docs.typo3.org/~mbless/github.com/xperseguers/TYPO3.docs.ter-automation/
-  __ https://github.com/xperseguers/TYPO3.docs.ter-automation
-
-- [`git-TERautomation`__]::
-
-    /home/mbless/HTDOCS/github.com/xperseguers/
-       RENDER-DOC/
-          force-render.sh   ::   helper script to manually enqueue a
-                                 given extension+version's manual
-          bin/
-             t3xutils.phar
-
-          queue/   ::  unpacked extensions (full) waiting to be rendered,
-                       populated by TerTask.php, emptied by RenderTask.php
-
-          render/  ::  working directory, processed by RenderTask.php,
-                       see "directory for build" below
-
-  __ http://docs.typo3.org/~mbless/github.com/xperseguers/TYPO3.docs.ter-automation/
-
-  * `RENDER-DOC/`__
-  * `RENDER-DOC/queue/`__
-  * `RENDER-DOC/render/`__
-
-  __ http://docs.typo3.org/~mbless/github.com/xperseguers/RENDER-DOC/
-  __ http://docs.typo3.org/~mbless/github.com/xperseguers/RENDER-DOC/queue/
-  __ http://docs.typo3.org/~mbless/github.com/xperseguers/RENDER-DOC/render/
 
 
 :ref:`Sitemap <sitemap>`
