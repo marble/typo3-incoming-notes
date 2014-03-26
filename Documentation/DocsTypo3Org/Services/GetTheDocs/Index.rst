@@ -7,14 +7,9 @@ GetTheDocs
 
 Rendered: |today|
 
+**Jump up and down on this page:**
+
 .. contents::
    :local:
 
-:ref:`Sitemap <sitemap>`
-
-
 ...
-
-
-:ref:`Sitemap <sitemap>`
-

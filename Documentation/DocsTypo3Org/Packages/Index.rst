@@ -7,11 +7,10 @@ Packages
 
 Rendered: |today|
 
+**Jump up and down on this page:**
+
 .. contents::
    :local:
-
-:ref:`Sitemap <sitemap>`
-
 
 
 Debian
@@ -84,18 +83,5 @@ TypoScript Highlighting for Pygments
 3. Copy :file:`typoscript.py`to the :file:`... /pygments/lexers/` folder
 
 4. To register the new lexer go to the ``lexers/``folder and run ``(sudo) python _mapping.py``.
-   Or run ``(sudo) python -c "import pygments.lexers._mapping"`` which should have the same
-   effect (untested).
 
-
-
-.. toctree: :
-   :maxdepth: 5
-   :glob:
-   :titlesonly:
-
-   *
-
-
-:ref:`Sitemap <sitemap>`
 

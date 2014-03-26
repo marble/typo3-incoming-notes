@@ -7,11 +7,10 @@ Actions
 
 Rendered: |today|
 
+**Jump up and down on this page:**
+
 .. contents::
    :local:
-
-:ref:`Sitemap <sitemap>`
-
 
 .. highlight:: bash
 
@@ -131,12 +130,4 @@ done at all. And they use ther own lockfile :file:`cron_rebuild.lockfile`::
   /home/mbless/HTDOCS/git.typo3.org/TYPO3v4/Extensions/TYPO3.CMS.ALL-SYSEXT.master.make/cron_rebuild.sh
 
 ..
-
-
-
-
-
-
-
-:ref:`Sitemap <sitemap>`
 

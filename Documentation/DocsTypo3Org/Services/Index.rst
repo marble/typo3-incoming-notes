@@ -7,11 +7,10 @@ Services
 
 Rendered: |today|
 
+**Jump up and down on this page:**
+
 .. contents::
    :local:
-
-:ref:`Sitemap <sitemap>`
-
 
 - build the docs
 - ninja rest editor rsted
@@ -24,15 +23,9 @@ Rendered: |today|
 
 
 .. toctree::
-:maxdepth: 5
+   :maxdepth: 5
 	   :glob:
 	   :titlesonly:
 
 	   *
 	   GetTheDocs/*
-
-
-
-
-:ref:`Sitemap <sitemap>`
-

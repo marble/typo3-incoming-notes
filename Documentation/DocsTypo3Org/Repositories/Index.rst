@@ -7,10 +7,10 @@ Repositories
 
 Rendered: |today|
 
+**Jump up and down on this page:**
+
 .. contents::
    :local:
-
-:ref:`Sitemap <sitemap>`
 
 
 RestTools.git
@@ -38,16 +38,4 @@ https://github.com/marble/typo3-docs-typo3-org-resources
 __ http://docs.typo3.org/~mbless/git.typo3.org/Documentation/DocsTypo3Org.git/
 __ http://docs.typo3.org/~mbless/git.typo3.org/Documentation/DocsTypo3Org.git.make/
 
-
-
-
-.. toctree: :
-   :maxdepth: 5
-   :glob:
-   :titlesonly:
-
-   *
-
-
-:ref:`Sitemap <sitemap>`
 

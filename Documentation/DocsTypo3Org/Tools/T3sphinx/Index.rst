@@ -7,11 +7,10 @@ Python Package 't3sphinx'
 
 Rendered: |today|
 
+**Jump up and down on this page:**
+
 .. contents::
    :local:
-
-:ref:`Sitemap <sitemap>`
-
 
 t3sphinx
 ========
@@ -130,6 +129,4 @@ The *codeblock for TYPO3* has now changed changed for the first time and carries
 ``version: 2014-03-23`` as an identifier. Settings ``html_translator_class``
 and ``locale_dirs`` are new.
 
-
-:ref:`Sitemap <sitemap>`
 

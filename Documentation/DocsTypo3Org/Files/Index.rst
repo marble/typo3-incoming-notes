@@ -7,10 +7,10 @@ Files and Folders
 
 Rendered: |today|
 
+**Jump up and down on this page:**
+
 .. contents::
    :local:
-
-:ref:`Sitemap <sitemap>`
 
 
 What is where?
@@ -167,14 +167,3 @@ Stash file
 The current :file:`objects.inv` is copied here before doing a "make clean" XXX ...
 
 
-
-
-
-
-
-
-
-
-
-
-:ref:`Sitemap <sitemap>`

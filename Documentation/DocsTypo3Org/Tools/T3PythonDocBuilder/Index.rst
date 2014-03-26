@@ -7,12 +7,10 @@ T3PythonDocBuilder
 
 Rendered: |today|
 
+**Jump up and down on this page:**
+
 .. contents::
    :local:
-
-:ref:`Sitemap <sitemap>`
-
-
 
 What does it do?
 ================
@@ -39,8 +37,3 @@ We are using OpenOffice for converting OpenOffice documents to HTML.
    OpenOffice tends to "hang" if asked to convert SXW-manuals that aren't
    error free ZIP archives. Check for archive integrity before passing
    a conversion job over to OpenOffice.
-
-
-
-:ref:`Sitemap <sitemap>`
-

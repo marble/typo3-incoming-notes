@@ -7,10 +7,10 @@ Tools
 
 Rendered: |today|
 
+**Jump up and down on this page:**
+
 .. contents::
    :local:
-
-:ref:`Sitemap <sitemap>`
 
 
 The build script 'cron_build.sh'
@@ -36,7 +36,4 @@ The Github Hook Receiver
    T3sphinx/*
    T3PythonDocBuilder/*
    ProjectIndex/*
-
-
-:ref:`Sitemap <sitemap>`
 

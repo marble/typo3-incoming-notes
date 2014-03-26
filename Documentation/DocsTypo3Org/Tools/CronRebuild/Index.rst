@@ -7,10 +7,10 @@ Builddir of a single documentation project
 
 Rendered: |today|
 
+**Jump up and down on this page:**
+
 .. contents::
    :local:
-
-:ref:`Sitemap <sitemap>`
 
 
 cron_rebuild.conf
@@ -169,5 +169,4 @@ Variables within :file:`cron_rebuild.sh`::
       $BIN_DIRECTORY/check_include_files.py
 
 
-:ref:`Sitemap <sitemap>`
 
