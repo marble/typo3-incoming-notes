@@ -32,6 +32,7 @@ The Github Hook Receiver
    :titlesonly:
 
    *
+   CronRebuild/*
    T3sphinx/*
    T3PythonDocBuilder/*
    ProjectIndex/*

@@ -21,5 +21,18 @@ Rendered: |today|
 - pdf finder
 
 
+
+
+.. toctree::
+:maxdepth: 5
+	   :glob:
+	   :titlesonly:
+
+	   *
+	   GetTheDocs/*
+
+
+
+
 :ref:`Sitemap <sitemap>`
 

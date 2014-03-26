@@ -1,0 +1,173 @@
+
+.. include:: ../../../Includes.txt
+
+==================================================
+Builddir of a single documentation project
+==================================================
+
+Rendered: |today|
+
+.. contents::
+   :local:
+
+:ref:`Sitemap <sitemap>`
+
+
+cron_rebuild.conf
+=================
+
+:file:`cron_rebuild.conf` is a configuration file, format is bash, included (=sourced) by cron_rebuild.sh
+to know what to do (name of the project, where it is located, where to publish to, ...).
+In case of [git-TERautomation], it is dynamically generated for the currently-processed extension.
+
+Example::
+
+   PROJECT=sphinx
+   VERSION=1.3.1
+
+   # Where to publish documentation
+   BUILDDIR=/home/mbless/public_html/typo3cms/extensions/sphinx/$VERSION
+
+   # If GITURL is empty then GITDIR is expected to be "ready" to be processed
+   GITURL=git://git.typo3.org/TYPO3CMS/Extensions/sphinx.git
+   GITDIR=/home/mbless/HTDOCS/git.typo3.org/TYPO3v4/Extensions/sphinx.git
+   GITBRANCH=$VERSION
+
+   ((# Path to the documentation within the Git repository)) should be named:
+   # Path to the documentation start folder
+   T3DOCDIR=$GITDIR/Documentation
+
+   # Packaging information
+   PACKAGE_ZIP=1
+   PACKAGE_KEY=typo3cms.extensions.sphinx
+   PACKAGE_LANGUAGE=default
+
+..
+
+
+About the input settings of :file:`cron_rebuild.conf`::
+
+   PROJECT
+      ?
+
+   VERSION
+      ?
+      is 'latest' allowed?
+
+   BUILDDIR
+      Where to publish documentation, for example:
+      BUILDDIR=/home/mbless/public_html/typo3cms/extensions/sphinx/$VERSION
+
+      .. attention::
+
+         older projects didn't have that .../$VERSION here.
+         But ../.htaccess is created. That's why .../typo3cms/extensions/ got unavailable.
+
+
+   GITURL
+      Where we can clone the data from. If GITURL is not set we assume that we don't
+      have to do fetching new data ourselves.
+
+   GITDIR
+      Absolute file path to the clone of the project.
+
+   GITBRANCH
+      A valid branch name to be used by Git ('master', '6-2', ...)
+      when doing: $ git checkout ${GITBRANCH}
+
+   PACKAGE_ZIP
+      Whether a package is to be created
+
+   PACKAGE_KEY
+      Is only used if $PACKAGE_ZIP=1 and 'packagedocumentation' is called
+
+   PACKAGE_LANGUAGE
+      Is always used!
+      The language can for example given as 'de' or 'de_XXX' or 'something'.
+      It will then be forced to become one of the Sphinx languages
+      or to become 'default':
+
+      SPHINX_LANGUAGES="bn ca cs da de es et eu fa fi fr hr hu it ja ko
+         lt lv nb_NO ne nl pl pt_BR ru sk sl sv tr uk_UA zh_CN zh_TW "
+
+   T3DOCDIR
+      This is the absolute path to the folder that contains the master_doc
+      If there is no <GITDIR>/Documentation/Index.rst but a
+      <GITDIR>/README.rst ist given then T3DOCDIR will be set equal to GITDIR.
+
+
+
+
+
+
+cron_rebuild.sh
+===============
+
+Steps::
+
+   Check REBUILD_REQUESTED
+      Do nothing if the file doesn't exist.
+
+   Call projectinfo2stdout
+      Echo some parameters to stdout.
+
+   If we have $GITURL:
+      Checkout branch $GITBRANCH
+      Pull from repository $GITURL
+
+   Call rebuildneeded
+      Create md5 checksum over documentation part of the repository
+      Compare with file build.checksum
+      if file is older than 12 hours or different:
+        continue
+      else:
+        exit
+
+   Run check_include_files.py as a safety check
+      Here we check by reading the ReST sources what ReST files will be
+      included. Process information goes to included-file-check.log.txt.
+      Stop everything if a file from outside the project is detected.
+
+   Temporarily remove localization directories
+      from Sphinx to prevent warnings with unreferenced files and
+      duplicate labels
+
+   Render the documentation like
+      BACKUP_T3DOCDIR=$T3DOCDIR
+      renderdocumentation $T3DOCDIR $T3DOCDIR 0
+
+
+Steps in subroutine ``renderdocumentation`` in ``cron_rebuild.sh``::
+
+   renderdocumentation  BASE_DIR  T3DOCDIR  IS_TRANSLATION
+      find SPHINXCODE from Sphinx languages and $PACKAGE_LANGUAGE
+      export SPHINXCODE as LANGUAGE if given and not 'default'
+      prepare Settings.yml if IS_TRANSLATION
+      make Sphinx HTML in a tempdir /tmp/...
+      call compilepdf
+      call packagedocumentation if $PACKAGE_ZIP==1
+      make Sphinx singlefile HTML
+      symlink the $MAKE_DIRECTORY to $BUILD_DIR/_make
+      make README.html accessible as Index.html if necessary
+      switch the newley rendered documentation with the public one
+
+
+
+
+Steps in subroutine ``compilepdf``in ``renderdocumentation`` in ``cron_rebuild.sh``::
+
+   ...
+
+..
+
+Variables within :file:`cron_rebuild.sh`::
+
+   BIN_DIRECTORY
+      Absolute path to the script folder as given by the cron_rebuild.sh script.
+      There should be:
+      $BIN_DIRECTORY/cron_rebuild.sh
+      $BIN_DIRECTORY/check_include_files.py
+
+
+:ref:`Sitemap <sitemap>`
+
