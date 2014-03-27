@@ -16,11 +16,14 @@ Rendered: |today|
 cron_rebuild.conf
 =================
 
+Example file
+------------
+
 :file:`cron_rebuild.conf` is a configuration file, format is bash, included (=sourced) by cron_rebuild.sh
 to know what to do (name of the project, where it is located, where to publish to, ...).
 In case of [git-TERautomation], it is dynamically generated for the currently-processed extension.
 
-Example::
+::
 
    PROJECT=sphinx
    VERSION=1.3.1
@@ -44,8 +47,10 @@ Example::
 
 ..
 
+Definitions in ``cron_rebuild.conf``
+------------------------------------
 
-About the input settings of :file:`cron_rebuild.conf`::
+::
 
    PROJECT
       Example:
@@ -117,7 +122,8 @@ About the input settings of :file:`cron_rebuild.conf`::
 cron_rebuild.sh
 ===============
 
-Steps::
+Steps
+-----
 
    Check REBUILD_REQUESTED
       Do nothing if the file doesn't exist.
@@ -151,6 +157,9 @@ Steps::
       renderdocumentation $T3DOCDIR $T3DOCDIR 0
 
 
+Steps in subroutine ``renderdocumentation``
+-------------------------------------------
+
 Steps in subroutine ``renderdocumentation`` in ``cron_rebuild.sh``::
 
    renderdocumentation  BASE_DIR  T3DOCDIR  IS_TRANSLATION
@@ -165,16 +174,21 @@ Steps in subroutine ``renderdocumentation`` in ``cron_rebuild.sh``::
       make README.html accessible as Index.html if necessary
       switch the newley rendered documentation with the public one
 
+..
 
+Steps in subroutine ``compilepdf``
+----------------------------------
 
-
-Steps in subroutine ``compilepdf``in ``renderdocumentation`` in ``cron_rebuild.sh``::
+Steps in subroutine ``compilepdf`` in ``renderdocumentation`` in ``cron_rebuild.sh``::
 
    ...
 
 ..
 
-Variables within :file:`cron_rebuild.sh`::
+Variables within :file:`cron_rebuild.sh`
+----------------------------------------
+
+::
 
    BIN_DIRECTORY
       Absolute path to the script folder as given by the cron_rebuild.sh script.
@@ -183,4 +197,4 @@ Variables within :file:`cron_rebuild.sh`::
          $BIN_DIRECTORY/check_include_files.py
 
 
-
+   ...
