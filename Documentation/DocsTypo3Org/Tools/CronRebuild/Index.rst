@@ -2,7 +2,7 @@
 .. include:: ../../../Includes.txt
 
 ==================================================
-Builddir of a single documentation project
+Build a single documentation project
 ==================================================
 
 Rendered: |today|
@@ -12,6 +12,40 @@ Rendered: |today|
 .. contents::
    :local:
 
+
+Makedir
+=======
+
+Starting point of a build process is a ``makedir`` folder with several
+files in it that control the build process. More files will be placed
+there during the build process and serve as logfiles.
+
+::
+
+
+   ((WIP))
+   cron_rebuild.sh
+      Is a symlink to the one and only common build script.
+
+   conf.py
+
+   cron_rebuild.checksum
+      A generated checksum of the documentation subtree in the
+      project. Used to decide wether a new build is needed.
+
+   warnings.txt
+      Very important! Here you find the Sphinx messages.
+
+   request_rebuild.php
+      Run this file or request it from the web to create the
+      necessary REBUILD_REQUESTED files that are used to
+      indicate that a rebuild should be done.
+
+   REBUILD_REQUESTED
+
+   ...
+
+..
 
 cron_rebuild.conf
 =================
