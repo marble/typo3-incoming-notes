@@ -123,6 +123,9 @@ Definitions in ``cron_rebuild.conf``
 cron_rebuild.sh
 ===============
 
+This is the script that actually builds a single documentation project
+on the server.
+
 Steps
 -----
 
