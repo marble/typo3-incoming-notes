@@ -48,42 +48,58 @@ Example::
 About the input settings of :file:`cron_rebuild.conf`::
 
    PROJECT
-      ?
+      Example:
+         sphinx
 
    VERSION
-      ?
-      is 'latest' allowed?
+      Example:
+         1.2.3 | latest | ...
+      The final build will end up in a folder with that name.
 
    BUILDDIR
-      Where to publish documentation, for example:
-      BUILDDIR=/home/mbless/public_html/typo3cms/extensions/sphinx/$VERSION
+      Example:
+         /home/mbless/public_html/typo3cms/extensions/sphinx/$VERSION
+      Where to publish documentation
 
-      .. attention::
-
-         older projects didn't have that .../$VERSION here.
-         But ../.htaccess is created. That's why .../typo3cms/extensions/ got unavailable.
-
+      Important: Must end with .../$PROJECT/$VERSION
 
    GITURL
-      Where we can clone the data from. If GITURL is not set we assume that we don't
-      have to do fetching new data ourselves.
+      Example:
+         git://git.typo3.org/TYPO3CMS/Extensions/sphinx.git
+      Where to clone the data from.
+      Note: If GITURL is not set it is assumed that the data in GITDIR
+      is ready and no ``git pull`` operation will be done.
 
    GITDIR
-      Absolute file path to the clone of the project.
+      Example:
+         /home/mbless/HTDOCS/git.typo3.org/TYPO3v4/Extensions/sphinx.git
+      Absolute path to the clone of the project.
+
+      Note: As a convention the folder names of these local copies
+            have '.git' at the end.
 
    GITBRANCH
-      A valid branch name to be used by Git ('master', '6-2', ...)
-      when doing: $ git checkout ${GITBRANCH}
+      Example:
+         master | 6-2 | 0a1b2c3d | ...
+      A valid argument for a ``git checkout`` command. So it can be
+      a branch name, a tag or a revision number.
 
    PACKAGE_ZIP
-      Whether a package is to be created
+      Example:
+         1 | 0 | <missing>
+      Whether a package is to be created.
 
    PACKAGE_KEY
-      Is only used if $PACKAGE_ZIP=1 and 'packagedocumentation' is called
+      Example:
+         typo3cms.extensions.sphinx
+      The PACKAGE_KEY is only used if PACKAGE_ZIP is given and TRUE.
+      In this case subroutine ``packagedocumentation`` is called.
 
    PACKAGE_LANGUAGE
+      Example:
+         default | fr | fr_CH | anything | ...
       Is always used!
-      The language can for example given as 'de' or 'de_XXX' or 'something'.
+      The language can for example be given as 'de' or 'de_XXX' or 'something'.
       It will then be forced to become one of the Sphinx languages
       or to become 'default':
 
@@ -91,13 +107,11 @@ About the input settings of :file:`cron_rebuild.conf`::
          lt lv nb_NO ne nl pl pt_BR ru sk sl sv tr uk_UA zh_CN zh_TW "
 
    T3DOCDIR
-      This is the absolute path to the folder that contains the master_doc
-      If there is no <GITDIR>/Documentation/Index.rst but a
-      <GITDIR>/README.rst ist given then T3DOCDIR will be set equal to GITDIR.
-
-
-
-
+      Example:
+         $GITDIR/Documentation
+      This is the absolute path to the folder that contains the ``master_doc``.
+      If there is no $GITDIR/Documentation/Index.rst but we have a
+      $GITDIR/README.rst then T3DOCDIR will be set equal to GITDIR.
 
 
 cron_rebuild.sh
@@ -165,8 +179,8 @@ Variables within :file:`cron_rebuild.sh`::
    BIN_DIRECTORY
       Absolute path to the script folder as given by the cron_rebuild.sh script.
       There should be:
-      $BIN_DIRECTORY/cron_rebuild.sh
-      $BIN_DIRECTORY/check_include_files.py
+         $BIN_DIRECTORY/cron_rebuild.sh
+         $BIN_DIRECTORY/check_include_files.py
 
 
 
