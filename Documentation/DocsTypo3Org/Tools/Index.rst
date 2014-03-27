@@ -7,23 +7,8 @@ Tools
 
 Rendered: |today|
 
-**Jump up and down on this page:**
+**Move on to:**
 
-.. contents::
-   :local:
-
-
-The build script 'cron_build.sh'
-================================
-...
-
-The Gerrit Hook Receiver
-========================
-...
-
-The Github Hook Receiver
-========================
-...
 
 
 .. toctree::
@@ -33,7 +18,9 @@ The Github Hook Receiver
 
    *
    CronRebuild/*
+   GerritHook/*
+   GithubHook/*
    T3sphinx/*
    T3PythonDocBuilder/*
-   ProjectIndex/*
+
 
