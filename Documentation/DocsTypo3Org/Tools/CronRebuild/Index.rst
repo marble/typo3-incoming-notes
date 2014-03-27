@@ -16,8 +16,8 @@ Rendered: |today|
 cron_rebuild.conf
 =================
 
-Example file
-------------
+Example file ``cron_rebuild.conf``
+----------------------------------
 
 :file:`cron_rebuild.conf` is a configuration file, format is bash, included (=sourced) by cron_rebuild.sh
 to know what to do (name of the project, where it is located, where to publish to, ...).
@@ -118,12 +118,15 @@ Definitions in ``cron_rebuild.conf``
       If there is no $GITDIR/Documentation/Index.rst but we have a
       $GITDIR/README.rst then T3DOCDIR will be set equal to GITDIR.
 
+..
 
 cron_rebuild.sh
 ===============
 
 Steps
 -----
+
+::
 
    Check REBUILD_REQUESTED
       Do nothing if the file doesn't exist.
@@ -156,6 +159,7 @@ Steps
       BACKUP_T3DOCDIR=$T3DOCDIR
       renderdocumentation $T3DOCDIR $T3DOCDIR 0
 
+..
 
 Steps in subroutine ``renderdocumentation``
 -------------------------------------------
@@ -185,8 +189,8 @@ Steps in subroutine ``compilepdf`` in ``renderdocumentation`` in ``cron_rebuild.
 
 ..
 
-Variables within :file:`cron_rebuild.sh`
-----------------------------------------
+Variables in ``cron_rebuild.sh``
+--------------------------------
 
 ::
 
@@ -196,5 +200,6 @@ Variables within :file:`cron_rebuild.sh`
          $BIN_DIRECTORY/cron_rebuild.sh
          $BIN_DIRECTORY/check_include_files.py
 
-
    ...
+
+..
