@@ -85,3 +85,11 @@ TypoScript Highlighting for Pygments
 4. To register the new lexer go to the ``lexers/``folder and run ``(sudo) python _mapping.py``.
 
 
+
+PHP
+===
+
+t3xutils.phar
+-------------
+
+https://github.com/etobi/Typo3ExtensionUtils
