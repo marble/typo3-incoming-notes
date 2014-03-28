@@ -167,3 +167,63 @@ Stash file
 The current :file:`objects.inv` is copied here before doing a "make clean" XXX ...
 
 
+((find correct headline))
+=========================
+
+manuals.json
+------------
+http://docs.typo3.org/typo3cms/extensions/manuals.json
+
+extensions.js
+-------------
+http://docs.typo3.org/typo3cms/extensions/extensions.js
+
+extensions-search.js
+--------------------
+http://docs.typo3.org/typo3cms/extensions/extensions-search.js
+
+
+::
+
+   $GLOBALS['config']['DIR']['work']
+      '/home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/'
+         Path to a working directory for this extension. Will hold
+	     cache files and queue of conversion jobs
+
+   $GLOBALS['config']['DIR']['publish']
+      '/home/mbless/public_html/typo3cms/extensions/'
+         Publish to http://docs.typo3.org/typo3cms/extensions/<ext-key>/
+
+   '/home/mbless/public_html/typo3cms/extensions/manuals.json'
+
+
+
+
+   $GLOBALS['config']['DIR']['scripts']
+      '/home/mbless/scripts/'
+         Path to the local clone of git project
+		 https://github.com/marble/typo3-docs-typo3-org-resources
+		 actually: userroot/scripts/
+
+   $GLOBALS['config']['BIN']['t3xutils.phar']
+      '/home/mbless/HTDOCS/github.com/xperseguers/RENDER-DOC/bin/t3xutils.phar',
+         Path to t3xutils.phar, available off
+         https://github.com/etobi/Typo3ExtensionUtils
+
+..
+
+documents.txt
+-------------
+The server team has been pointed to ``documents.txt`` to use it as input
+list for the Solr indexer:
+
+- http://docs.typo3.org//typo3cms/documents.txt
+- /home/mbless/public_html/typo3cms/documents.txt
+
+
+documents.json
+--------------
+What's this?:
+
+- /home/mbless/public_html/typo3cms/documents.json
+- http://docs.typo3.org//typo3cms/documents.json
